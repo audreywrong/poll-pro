@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class HomeController extends Controller
 {
     /**
@@ -23,6 +21,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $polls = "Hello World";
+        $data['polls'] = $polls; // define the variable to be sent to the view
+        // $this->load->view('templates/template_student', $data);
+        return view('home', $data);
     }
 }

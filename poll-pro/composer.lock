@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ddeabc1ce42c24615f2fd0343a6ea0f2",
+    "content-hash": "947ef3b5d5ddffb6d539b56e333a797b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -894,6 +894,66 @@
             "time": "2021-03-21T16:25:00+00:00"
         },
         {
+            "name": "inani/larapoll",
+            "version": "3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/akiyamaSM/larapoll.git",
+                "reference": "b14d971ca17be4213cf066ce16f909d062253ae4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/akiyamaSM/larapoll/zipball/b14d971ca17be4213cf066ce16f909d062253ae4",
+                "reference": "b14d971ca17be4213cf066ce16f909d062253ae4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5|~6|~7|~8"
+            },
+            "require-dev": {
+                "fzaninotto/faker": "~1.4",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Inani\\Larapoll\\LarapollServiceProvider"
+                    ],
+                    "aliases": {
+                        "PollWriter": "Inani\\Larapoll\\PollWriterFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Inani\\Larapoll\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Inani El Houssain",
+                    "email": "inanielhoussain@gmail.com"
+                }
+            ],
+            "description": "A Laravel package to create polls",
+            "keywords": [
+                "laravel",
+                "php",
+                "polls",
+                "votes"
+            ],
+            "support": {
+                "issues": "https://github.com/akiyamaSM/larapoll/issues",
+                "source": "https://github.com/akiyamaSM/larapoll/tree/3.0"
+            },
+            "time": "2020-12-19T18:22:32+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v8.34.0",
             "source": {
@@ -1060,6 +1120,62 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2021-03-23T15:12:51+00:00"
+        },
+        {
+            "name": "laravel/legacy-factories",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/legacy-factories.git",
+                "reference": "5e3fe2fd5fda64e20ea5c74c831a7346294e902a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/legacy-factories/zipball/5e3fe2fd5fda64e20ea5c74c831a7346294e902a",
+                "reference": "5e3fe2fd5fda64e20ea5c74c831a7346294e902a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/macroable": "^8.0",
+                "php": "^7.3|^8.0",
+                "symfony/finder": "^3.4|^4.0|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Illuminate\\Database\\Eloquent\\LegacyFactoryServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "helpers.php"
+                ],
+                "psr-4": {
+                    "Illuminate\\Database\\Eloquent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The legacy version of the Laravel Eloquent factories.",
+            "homepage": "http://laravel.com",
+            "support": {
+                "issues": "https://github.com/laravel/framework/issues",
+                "source": "https://github.com/laravel/framework"
+            },
+            "time": "2020-10-27T14:25:32+00:00"
         },
         {
             "name": "laravel/tinker",
