@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../css/app.css";
+import WelcomeGraph from "./WelcomeGraph";
 
 const Profile = () => {
     return (
         <>
-            <div className="profile-container">
+            <div className="top-profile-container">
                 <div className="graph-container">
-                    <img
-                        src="../../svg/bar-graph-fruit.svg"
-                        className="graph"
-                    />
+                    <WelcomeGraph />
                 </div>
-                <div className="profile-information">
-                    <div>
-                        <h1>Welcome </h1>
-                    </div>
-                    <div className="create-poll-button">Create a New Poll!</div>
+                <div className="welcome-message">
+                    <h1>Welcome 'user'!</h1>
+                </div>
+            </div>
+            <div className="bottom-profile-container">
+                <div className="active-polls">
+                    <h3>Your Active Polls</h3>
                 </div>
             </div>
         </>

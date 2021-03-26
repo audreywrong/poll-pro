@@ -13,3 +13,4 @@ require("./bootstrap");
  */
 
 require("./components/Index");
+// require("./components/WelcomeGraph"); --- See note on welcome.blade.php file
