@@ -106,6 +106,8 @@ class PollManagerController extends Controller
         $poll->remove();
         return response('', 200);
     }
+
+    // Create a Poll
     public function create()
     {
         return view('larapoll::dashboard.create');
