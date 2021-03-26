@@ -7,7 +7,7 @@
     @auth
     <script>
         var GUSER = {{ Auth::user()->id }};
-        var GPOLLS = "{{ $polls }}";
+        // var GPOLLS = "{{ $polls }}";
     </script>
     @endauth
 
