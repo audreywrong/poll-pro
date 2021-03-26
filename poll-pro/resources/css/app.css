@@ -5,6 +5,10 @@ body {
     background-color: white;
 }
 
+.radial-chart {
+    margin: auto;
+}
+
 .top-profile-container {
     display: block;
     margin: 0 auto;
