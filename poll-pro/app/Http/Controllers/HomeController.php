@@ -21,9 +21,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $polls = "Hello World";
-        $data['polls'] = $polls; // define the variable to be sent to the view
-        // $this->load->view('templates/template_student', $data);
+        $polls = Poll::select('larapoll_polls.*')
+        // ->join(votes table)
+            ->get();
+        $data['polls'] = $polls;
         return view('home', $data);
+
+        // Laravel SQL - more raw
+        // $polls = DB::table('polls')
+        //         ->selectRaw('*')
+        //         ->get();
+
+        //Pure SQL
+        // SELECT * FROM `larapoll_polls`
     }
 }
