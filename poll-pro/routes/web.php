@@ -21,22 +21,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/admin/polls/create', [App\Http\Controllers\PollController::class, 'create'])->name('poll.create');
-Route::get('/polls/details', [App\Http\Controllers\PollController::class, 'view_details'])->name('poll.details');
-Route::post('/vote/polls/{poll}', [App\Http\Controllers\VoteManagerController::class, 'vote'])->name('poll.vote');
-
-// Route::get('/admin/polls/create', [App\Http\Controllers\HomeController::class, 'index'])->name('poll.create');
-
-// Route::get('/admin/polls/create', ['uses' => 'PollManagerController@create', 'as' => 'poll.create']);
-
-// $prefix = config('larapoll_config.prefix');
-// Route::group(['namespace' => 'Inani\Larapoll\Http\Controllers', 'prefix' => $prefix, 'middleware' => 'web'], function () {
-//     Route::get('/admin/polls/create', [App\Http\Controllers\PollManagerController::class, 'create'])->name('poll.create');
-//     // $middleware = config('larapoll_config.admin_auth');
-
-//     // $guard = config('larapoll_config.admin_guard');
-//     // Route::middleware(["$middleware:$guard"])->group(function () {
-
-//     // });
-
-// });
+// Route::get('/admin/polls/create', [Inani\Larapoll\Http\Controllers\PollManagerController::class, 'create'])->name('poll.create');
+// Route::get('/polls/details', [App\Http\Controllers\PollController::class, 'view_details'])->name('poll.details');
