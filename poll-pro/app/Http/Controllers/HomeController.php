@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Poll;
+
 class HomeController extends Controller
 {
     /**
