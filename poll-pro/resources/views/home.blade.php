@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    @auth
-    <script>
-        var GUSER = {{ Auth::user()->id }};
-    </script>
-    @endauth
+  @auth
+  <script>
+    var GUSER = "{{ Auth::user()->name }}";
+  </script>
+  @endauth
 
 </head>
 
@@ -18,7 +18,7 @@
 <style src="{{ asset('/css/app.css') }}"></style>
 
 <script>
-    var decodeEntities = (function() {
+  var decodeEntities = (function() {
   // this prevents any overhead from creating the object each time
   var element = document.createElement('div');
 
