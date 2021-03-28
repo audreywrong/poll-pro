@@ -9,7 +9,6 @@ const Index = () => {
         <>
             <Profile />
             <PollTable />
-            <div>POLLS?</div>
         </>
     );
 };
