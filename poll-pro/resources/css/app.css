@@ -5,10 +5,6 @@ body {
     background-color: white;
 }
 
-.radial-chart {
-    margin: auto;
-}
-
 .top-profile-container {
     display: block;
     margin: 0 auto;
@@ -16,13 +12,22 @@ body {
     text-align: center;
 }
 
+.radial-chart {
+    margin: auto;
+}
+
 .welcome-message {
     padding-top: 2em;
     font-weight: bold;
 }
 
-.bottom-profile-container {
+.poll-message {
     padding-top: 2em;
+    font-weight: bold;
+}
+
+.bottom-profile-container {
+    padding-top: 1em;
 }
 
 html {
