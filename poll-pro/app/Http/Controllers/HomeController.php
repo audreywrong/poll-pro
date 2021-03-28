@@ -23,9 +23,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $polls = Poll::select('larapoll_polls.*')
-        // ->join(votes table)
-            ->get();
+        // $polls = Poll::select('larapoll_polls.*')
+        //     ->get();
+        $polls = Poll::withCount('options', 'votes')->get();
         $data['polls'] = $polls;
         return view('home', $data);
 

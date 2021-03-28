@@ -1,4 +1,4 @@
-@extends('larapoll::layouts.app')
+@extends('layouts.app')
 
 <head>
     <meta charset="utf-8">
@@ -10,9 +10,10 @@
 
 {{-- <script defer src="{{ asset('/js/app.js') }}"></script> --}}
 <style src="{{ asset('/css/app.css') }}"></style>
-
 <h1>Poll Details</h1>
-{{ PollWriter::draw(Poll::find(1)) }}
+
+{{-- @inject('Poll', 'App\Models\Poll') --}}
+{{ PollWriter::draw(2) }}
 
 
 @endsection
