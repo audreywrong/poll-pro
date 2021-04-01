@@ -39,8 +39,8 @@
         </div>
         @endif
 
-        <div class="content">
-            <div id="testing" class="title m-b-md"></div>
+        <div class="flex-center position-ref full-height">
+            {{ PollWriter::draw(2) }}
         </div>
     </div>
 </body>
